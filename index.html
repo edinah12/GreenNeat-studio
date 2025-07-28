@@ -3,30 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GreenNest Studio - Home</title>
+  <title>GreenNeat studio - Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>GreenNest Studio</h1>
+    <h1>GreenNeat studio</h1>
     <p>Designs that grow with you</p>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
+  <nav id="main-nav">
+    <button id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <a href="index.html" class="active">Home</a>
     <a href="services.html">Services</a>
     <a href="about.html">About us</a>
     <a href="contact.html">Contact us</a>
   </nav>
 
-  <section>
-    <h2>Welcome to GreenNest Studio</h2>
-    <p>We create sustainable, stylish, and smart design solutions. Whether it’s for web, branding, or interior concepts—we help ideas grow.</p>
-    <img src="image 2.jpg" alt="GreenNest Studio Nature">
+  <section class="hero">
+    <h1>Welcome to GreenNest Studio</h1>
+    <p class="subtitle">Where nature meets creativity. Transform your space with lush plants and unique pottery, crafted with care.</p>
+    <a href="services.html" class="btn">Explore Our Services</a>
+    <img src="image 2.jpg" alt="GreenNest Studio Nature" class="hero-img">
+  </section>
+
+  <section class="featured-services">
+    <h2>What We Offer</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <img src="Capture 1.PNG" alt="Indoor Plants">
+        <h3>Indoor Plants</h3>
+        <p>Transform your space with our curated selection of easy-care and statement plants.</p>
+        <a href="services.html" class="learn-more">Learn more</a>
+      </div>
+      <div class="service-card">
+        <img src="Capture 6.PNG" alt="Pottery Studio">
+        <h3>Pottery Studio</h3>
+        <p>Join our creative workshops or commission a custom piece for your home or office.</p>
+        <a href="services.html" class="learn-more">Learn more</a>
+      </div>
+      <div class="service-card">
+        <img src="Capture 4.PNG" alt="Custom Arrangements">
+        <h3>Custom Arrangements</h3>
+        <p>Personalized plant and pottery combos, tailored to your style and space.</p>
+        <a href="services.html" class="learn-more">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial-slide active">
+        <blockquote>“GreenNest Studio turned my apartment into a green oasis. The pottery class was so much fun!”<br><span>- Alex M.</span></blockquote>
+      </div>
+      <div class="testimonial-slide">
+        <blockquote>“Beautiful plants, friendly team, and creative workshops. Highly recommend!”<br><span>- Priya S.</span></blockquote>
+      </div>
+      <div class="testimonial-slide">
+        <blockquote>“The team helped me pick the perfect plants for my office. Everything looks amazing and my clients always compliment the space.”<br><span>- Brian K.</span></blockquote>
+      </div>
+      <div class="testimonial-slide">
+        <blockquote>“I loved the pottery workshop! I learned so much and took home a piece I made myself. Will definitely come back.”<br><span>- Grace N.</span></blockquote>
+      </div>
+      <div class="testimonial-slide">
+        <blockquote>“Excellent service and beautiful products. The staff are knowledgeable and truly care about their customers.”<br><span>- Samuel T.</span></blockquote>
+      </div>
+    </div>
+    <div class="testimonial-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Stay Connected</h2>
+    <p>Get plant care tips, studio news, and special offers. Join our newsletter!</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
   </section>
 
   <footer>
     <p>&copy; 2025 GreenNest Studio. All rights reserved.</p>
   </footer>
+  <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+  <script src="script.js"></script>
 </body>
 </html>

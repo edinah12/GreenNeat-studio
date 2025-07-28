@@ -2,14 +2,20 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #e9f5e1 0%, #b7e4c7 50%, #d8f3dc 100%);
+    padding-top: 210px; /* Account for fixed header and nav */
+    background: linear-gradient(rgba(233, 245, 225, 0.9), rgba(183, 228, 199, 0.9), rgba(216, 243, 220, 0.9)), url('Capture 6.PNG') center/cover no-repeat fixed;
     color: #222;
 }
 header {
     background-color: #3a5a40;
     color: #fff;
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 0 2rem 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 header h1 {
     font-size: 2.2rem;
@@ -28,6 +34,12 @@ nav {
     gap: 30px;
     background: #588157;
     padding: 12px 0;
+    position: fixed;
+    top: 150px; /* Position below the fixed header */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(60,80,60,0.1);
 }
 nav a {
     color: #fff;
@@ -128,6 +140,87 @@ footer {
     th, td {
         padding: 0.6rem 0.3rem;
     }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    #nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #fff;
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+        z-index: 1001;
+        cursor: pointer;
+    }
+    #main-nav.open a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    #main-nav a {
+        display: none;
+    }
+    #main-nav.open a {
+        display: block;
+    }
+}
+
+/* Hamburger menu button (hidden on desktop) */
+#nav-toggle {
+    display: none;
+}
+
+/* Accordion styles */
+.accordion {
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    background: #e9f5e1;
+    color: #3a5a40;
+    font-size: 1.1rem;
+    transition: background 0.2s;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+.accordion.active, .accordion:hover {
+    background: #b7e4c7;
+}
+.panel {
+    padding: 0 1rem 1rem 1rem;
+    display: none;
+    overflow: hidden;
+}
+.panel.show {
+    display: block;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background: #588157;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(60,80,60,0.15);
+    transition: background 0.2s;
+}
+#scrollTopBtn:hover {
+    background: #3a5a40;
 }
 section img {
   max-width: 600px;
@@ -135,4 +228,20 @@ section img {
   display: block;
   margin: 30px auto;
   border-radius: 14px;
+} 
+.about-hero {
+  position: relative;
+  text-align: center;
+  padding: 3rem 1rem 3rem 1rem;
+  width: 100vw;
+  margin: 2rem calc(50% - 50vw);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(60,80,60,0.1);
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('Capture 6.PNG') center/cover no-repeat;
+  color: #fff;
 } 

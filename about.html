@@ -3,30 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GreenNest Studio - About</title>
+  <title>GreenNeat studio - About</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>GreenNest Studio</h1>
+    <h1>GreenNeat studio</h1>
     <p>Designs that grow with you</p>
   </header>
 
-  <nav>
+  <nav id="main-nav">
+    <button id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
-    <a href="about.html">About us</a>
+    <a href="about.html" class="active">About us</a>
     <a href="contact.html">Contact us</a>
   </nav>
 
-  <section>
-    <h2>About Us</h2>
-    <p>GreenNest Studio was born from the idea that creativity and sustainability can work hand in hand. We're a small team passionate about design, plants, and purpose-driven projects.</p>
-    <img src="Capture 6.PNG" alt="Studio Work">
-  </section>
+  <main>
+    <section class="about-hero">
+      <h2>Our Story</h2>
+      <p>GreenNest Studio was born from the idea that creativity and sustainability can work hand in hand. We're a small team passionate about design, plants, and purpose-driven projects.</p>
+    </section>
+
+    <section class="mission-vision">
+      <div class="mission">
+        <h3>Our Mission</h3>
+        <p>To inspire and empower people to create beautiful, sustainable spaces that nurture both the environment and the human spirit. We believe that everyone deserves to live and work in spaces that bring joy, health, and creativity.</p>
+      </div>
+      <div class="vision">
+        <h3>Our Vision</h3>
+        <p>A world where every space is a sanctuary of growth, creativity, and connection. We envision communities where people are deeply connected to nature and each other through the beauty of plants and handmade art.</p>
+      </div>
+    </section>
+
+    <section class="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="image 3.jpg" alt="Team Member">
+          <h3>Sarah Green</h3>
+          <p class="role">Founder & Plant Expert</p>
+          <p>With over 8 years of experience in horticulture and sustainable design, Sarah leads our plant curation and care services. Her passion for creating healthy indoor environments drives everything we do.</p>
+          <p class="contact-info"><strong>Email:</strong> sarah@greenneat.com<br><strong>Phone:</strong> +256 701 234567</p>
+        </div>
+        <div class="team-member">
+          <img src="image 4.jpg" alt="Team Member">
+          <h3>Marcus Clay</h3>
+          <p class="role">Pottery Artist & Instructor</p>
+          <p>A master potter with 12 years of experience, Marcus brings creativity and patience to every workshop. His unique designs blend traditional techniques with modern aesthetics.</p>
+          <p class="contact-info"><strong>Email:</strong> marcus@greenneat.com<br><strong>Phone:</strong> +256 772 345678</p>
+        </div>
+        <div class="team-member">
+          <img src="image 5.jpg" alt="Team Member">
+          <h3>Emma Bloom</h3>
+          <p class="role">Design Consultant</p>
+          <p>Emma specializes in creating harmonious plant and pottery arrangements that transform spaces. Her background in interior design helps clients achieve their perfect aesthetic.</p>
+          <p class="contact-info"><strong>Email:</strong> emma@greenneat.com<br><strong>Phone:</strong> +256 784 456789</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="values">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <h3>🌱 Sustainability</h3>
+          <p>We source eco-friendly materials and promote sustainable practices in everything we do.</p>
+        </div>
+        <div class="value-item">
+          <h3>🎨 Creativity</h3>
+          <p>We believe in the power of artistic expression to transform spaces and inspire people.</p>
+        </div>
+        <div class="value-item">
+          <h3>🤝 Community</h3>
+          <p>We build connections through workshops, events, and shared experiences.</p>
+        </div>
+        <div class="value-item">
+          <h3>💚 Wellness</h3>
+          <p>We promote mental and physical well-being through nature and creative expression.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements">
+      <h2>What We've Achieved</h2>
+      <div class="achievements-grid">
+        <div class="achievement">
+          <h3>500+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="achievement">
+          <h3>200+</h3>
+          <p>Workshops Conducted</p>
+        </div>
+        <div class="achievement">
+          <h3>1000+</h3>
+          <p>Plants Placed</p>
+        </div>
+        <div class="achievement">
+          <h3>5+</h3>
+          <p>Years of Service</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Ready to Start Your Journey?</h2>
+      <p>Whether you're looking to add some greenery to your space or unleash your creativity in our pottery studio, we're here to help you grow.</p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 GreenNest Studio. All rights reserved.</p>
   </footer>
+  <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+  <script src="script.js"></script>
 </body>
 </html>
